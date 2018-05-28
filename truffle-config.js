@@ -1,4 +1,11 @@
 module.exports = {
-  // See <http://truffleframework.com/docs/advanced/configuration>
-  // to customize your Truffle configuration!
+  networks: {
+    develop: {
+      host: 'localhost'
+      , port: 7545
+      , network_id: "*"
+      , gas: 4700100
+      //, gasPrice: web3.toWei("20", "gwei")
+    }
+  }
 };
